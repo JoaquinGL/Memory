@@ -2,7 +2,7 @@
 //  gameSettings.h
 //  memory
 //
-//  Created by K on 07/12/13.
+//  Created by JG on 25/10/14.
 //
 //
 

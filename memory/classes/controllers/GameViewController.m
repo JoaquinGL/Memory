@@ -2,11 +2,10 @@
 //  GameViewController.m
 //  memory
 //
-//  Created by K on 12/11/13.
+//  Created by JG on 25/10/14.
 //
 //
 
-#import <AVFoundation/AVFoundation.h>
 #import "GameViewController.h"
 #import "CardView.h"
 #import "GameModel.h"
@@ -20,9 +19,6 @@
 @property (nonatomic) GameModel *gameModel;
 @property (nonatomic) NSMutableArray *turnedCardViews;
 @property (nonatomic) HighscoreModel *hsModel;
-@property (nonatomic) AVAudioPlayer *successAudio;
-@property (nonatomic) AVAudioPlayer *failAudio;
-@property (nonatomic) AVAudioPlayer *finishAudio;
 
 @end
 
@@ -37,11 +33,6 @@
     
     self.hsModel = [[HighscoreModel alloc] init];
     self.turnedCardViews = [NSMutableArray array];
-    
-    // Load sounds
-    self.successAudio = [[AVAudioPlayer alloc] initWithContentsOfURL:[[NSURL alloc] initFileURLWithPath: [[NSBundle mainBundle] pathForResource:@"success" ofType:@"wav"]] error:NULL];
-    self.failAudio = [[AVAudioPlayer alloc] initWithContentsOfURL:[[NSURL alloc] initFileURLWithPath: [[NSBundle mainBundle] pathForResource:@"fail" ofType:@"wav"]] error:NULL];
-    self.finishAudio = [[AVAudioPlayer alloc] initWithContentsOfURL:[[NSURL alloc] initFileURLWithPath: [[NSBundle mainBundle] pathForResource:@"finish" ofType:@"wav"]] error:NULL];
     
     [self generateCardViews];
     [self updateScoreLabel:self.player1ScoreLabel withScore:(long)self.gameModel.player1Score];
@@ -178,10 +169,8 @@
         if (cv1.value == cv2.value) {
             [self.gameModel answeredCorrect];
             [self fadeOutTurnedCards];
-            [self.successAudio play];
         } else {
             [self.gameModel answeredWrong];
-            [self.failAudio play];
         }
         
         [self updateScoreLabel:self.player1ScoreLabel withScore:(long) self.gameModel.player1Score];
@@ -205,8 +194,6 @@
             govc.score = self.gameModel.player1Score;
             govc.winner = @"Player 1";
         }
-        
-        [self.finishAudio play];
         
         [self presentViewController:govc animated:NO completion:^(){
             [self.gameModel clearGameData];

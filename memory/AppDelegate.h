@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  memory
 //
-//  Created by K on 12/11/13.
+//  Created by JG on 25/10/14.
 //
 //
 

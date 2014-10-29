@@ -2,8 +2,7 @@
 //  SimpleTableViewCell.h
 //  memory
 //
-//  Created by Joaquin Giraldez on 28/10/14.
-//  Copyright (c) 2014 K. All rights reserved.
+//  Created by JG on 28/10/14.
 //
 
 #import <UIKit/UIKit.h>

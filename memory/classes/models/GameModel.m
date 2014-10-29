@@ -2,7 +2,7 @@
 //  GameModel.m
 //  memory
 //
-//  Created by K on 21/11/13.
+//  Created by JG on 25/10/14.
 //  
 //
 
@@ -143,8 +143,8 @@
     NSUInteger count = [arr count];
     
     for (NSUInteger i = 0; i < count; ++i) {
-        NSInteger nElements = count - i;
-        NSInteger n = arc4random_uniform(nElements) + i;
+        NSUInteger nElements = count - i;
+        NSUInteger n = arc4random_uniform((uint32_t) nElements) + i;
         [arr exchangeObjectAtIndex:i withObjectAtIndex:n];
     }
     

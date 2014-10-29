@@ -2,7 +2,7 @@
 //  HighscoreModel.m
 //  memory
 //
-//  Created by K on 30/11/13.
+//  Created by JG on 25/10/14.
 //  
 //
 

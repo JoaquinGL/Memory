@@ -2,7 +2,7 @@
 //  main.m
 //  memory
 //
-//  Created by K on 17/11/13.
+//  Created by JG on 25/10/14.
 //  
 //
 
