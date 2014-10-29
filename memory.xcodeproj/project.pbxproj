@@ -29,6 +29,7 @@
 		3BD81DCC1853997900C3E6ED /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD81DC41853997900C3E6ED /* CardView.m */; };
 		E38F6A9419FF99FE004B9D8E /* SimpleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E38F6A9319FF99FE004B9D8E /* SimpleTableViewCell.m */; };
 		E38F6A961A000DED004B9D8E /* iphonePaddingReference.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E38F6A951A000DED004B9D8E /* iphonePaddingReference.jpg */; };
+		E3A479271A01339D001F5089 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A479261A01339D001F5089 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		E38F6A9219FF99FE004B9D8E /* SimpleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewCell.h; sourceTree = "<group>"; };
 		E38F6A9319FF99FE004B9D8E /* SimpleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewCell.m; sourceTree = "<group>"; };
 		E38F6A951A000DED004B9D8E /* iphonePaddingReference.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = iphonePaddingReference.jpg; path = memory/Images.xcassets/iphonePaddingReference.imageset/iphonePaddingReference.jpg; sourceTree = SOURCE_ROOT; };
+		E3A479251A01339D001F5089 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		E3A479261A01339D001F5089 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 		3BD81DB21853997900C3E6ED /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E3A479251A01339D001F5089 /* BaseViewController.h */,
+				E3A479261A01339D001F5089 /* BaseViewController.m */,
 				3BD81DB91853997900C3E6ED /* MenuViewController.h */,
 				3BD81DBA1853997900C3E6ED /* MenuViewController.m */,
 				3BD81DB71853997900C3E6ED /* HighscoreViewController.h */,
@@ -326,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BD81DC51853997900C3E6ED /* GameOverViewController.m in Sources */,
+				E3A479271A01339D001F5089 /* BaseViewController.m in Sources */,
 				E38F6A9419FF99FE004B9D8E /* SimpleTableViewCell.m in Sources */,
 				3BD81DCA1853997900C3E6ED /* GameModel.m in Sources */,
 				0AC063F518396F9D005A5B1E /* AppDelegate.m in Sources */,

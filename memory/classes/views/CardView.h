@@ -10,10 +10,12 @@
 
 @interface CardView : UIImageView
 
-@property (nonatomic) NSInteger pos;
-@property (nonatomic) NSInteger value;
+    @property ( nonatomic )NSInteger pos;
+    @property ( nonatomic )NSInteger value;
 
--(id) initWithFrame: (CGRect)frame andPosition: (NSInteger)pos andValue: (NSInteger)value;
--(void) flip;
+    - ( id )initWithFrame: ( CGRect )frame
+              andPosition: ( NSInteger )pos
+                 andValue: ( NSInteger )value;
+    - ( void )flip;
 
 @end

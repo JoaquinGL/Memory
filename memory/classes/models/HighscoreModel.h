@@ -10,8 +10,8 @@
 
 @interface HighscoreModel : NSObject
 
--(NSArray *) getHighscore;
--(void) saveScoreWithPoints: (NSInteger)points andName: (NSString *)name;
--(BOOL) didReachHighscore: (NSInteger)points;
+    - ( NSArray* )getHighscore;
+    - ( void )saveScoreWithPoints: ( NSInteger )points andName: ( NSString* )name;
+    - ( BOOL )didReachHighscore: ( NSInteger )points;
 
 @end

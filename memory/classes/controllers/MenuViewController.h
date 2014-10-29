@@ -7,16 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface MenuViewController : UIViewController
+@interface MenuViewController : BaseViewController
 
-@property (strong, nonatomic) IBOutlet UIButton *twoPlayersButton;
-@property (strong, nonatomic) IBOutlet UIButton *onePlayerButton;
-@property (weak, nonatomic) IBOutlet UIButton *continueButton;
--(IBAction) startNewGame:(id)sender;
--(IBAction) continueGame:(id)sender;
--(IBAction) displayHighscore:(id)sender;
--(IBAction) setOnePlayer:(id)sender;
--(IBAction) setTwoPlayers:(id)sender;
+    @property( strong, nonatomic )IBOutlet UIButton* onePlayerButton;
+    @property( weak, nonatomic )IBOutlet UIButton* continueButton;
+
+    - ( IBAction )startNewGame: ( id )sender;
+    - ( IBAction )continueGame: ( id )sender;
 
 @end

@@ -9,9 +9,8 @@
 
 @interface SimpleTableViewCell : UITableViewCell
 
-
-@property (nonatomic, weak) IBOutlet UILabel *name;
-@property (nonatomic, weak) IBOutlet UILabel *position;
-@property (nonatomic, weak) IBOutlet UILabel *points;
+    @property ( nonatomic, weak )IBOutlet UILabel* name;
+    @property ( nonatomic, weak )IBOutlet UILabel* position;
+    @property ( nonatomic, weak )IBOutlet UILabel* points;
 
 @end

@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HighscoreViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface HighscoreViewController : UIViewController < UITableViewDelegate, UITableViewDataSource >
 
--(IBAction) displayMenu:(id)sender;
+    - ( IBAction )displayMenu: ( id )sender;
 
 @end

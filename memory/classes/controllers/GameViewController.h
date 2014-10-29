@@ -7,17 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface GameViewController : UIViewController <UIScrollViewDelegate>
+@interface GameViewController : BaseViewController <UIScrollViewDelegate>
 
-@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (strong, nonatomic) IBOutlet UIView *boardView;
-@property (strong, nonatomic) IBOutlet UILabel *player1ScoreLabel;
-@property (strong, nonatomic) IBOutlet UILabel *player2ScoreLabel;
-@property (weak, nonatomic) IBOutlet UILabel *turnLabel;
-@property (nonatomic) NSInteger numberOfPlayers;
-@property (nonatomic) NSDictionary *gameStateData;
+    @property ( strong, nonatomic )IBOutlet UIScrollView* scrollView;
+    @property ( strong, nonatomic )IBOutlet UIView* boardView;
+    @property ( strong, nonatomic )IBOutlet UILabel* player1ScoreLabel;
+    @property ( strong, nonatomic )IBOutlet UILabel* player2ScoreLabel;
+    @property ( weak, nonatomic)IBOutlet UILabel* turnLabel;
+    @property ( nonatomic )NSInteger numberOfPlayers;
+    @property ( nonatomic )NSDictionary* gameStateData;
 
--(IBAction) displayMenu: (id)sender;
+    - ( IBAction )displayMenu: ( id )sender;
 
 @end

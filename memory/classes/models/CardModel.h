@@ -10,9 +10,9 @@
 
 @interface CardModel : NSObject
 
-@property (nonatomic) NSInteger value;
-@property (nonatomic) BOOL outOfPlay;
+    @property ( nonatomic )NSInteger value;
+    @property ( nonatomic )BOOL outOfPlay;
 
--(id) initWithValue:(NSInteger)value;
+    - ( id )initWithValue: ( NSInteger )value;
 
 @end

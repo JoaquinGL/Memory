@@ -10,15 +10,15 @@
 
 @implementation CardModel
 
--(id) initWithValue:(NSInteger)value {
-    self = [super init];
-    
-    if (self) {
-        self.value = value;
-        self.outOfPlay = NO;
+    - ( id )initWithValue: ( NSInteger )value {
+        self = [super init];
+        
+        if ( self ) {
+            self.value = value;
+            self.outOfPlay = NO;
+        }
+        
+        return self;
     }
-    
-    return self;
-}
 
 @end

@@ -10,22 +10,20 @@
 
 @interface GameModel : NSObject
 
-@property (nonatomic) NSMutableArray *cards;
-@property (nonatomic) NSMutableArray *turnedCards;
-@property (nonatomic) BOOL isMultiplayer;
-@property (nonatomic) BOOL isFirstPlayersTurn;
-@property (nonatomic) NSInteger player1Score;
-@property (nonatomic) NSInteger player2Score;
+    @property ( nonatomic )NSMutableArray* cards;
+    @property ( nonatomic )NSMutableArray* turnedCards;
+    @property ( nonatomic )BOOL isFirstPlayersTurn;
+    @property ( nonatomic )NSInteger player1Score;
 
--(id) initWithPlayers: (NSInteger)numberOfPlayers;
--(id) initWithSavedData: (NSDictionary *)gameStateData;
--(BOOL) canPickCard: (long)index;
--(BOOL) isPairFound;
--(BOOL) isGameOver;
--(void) pickCard: (long)index;
--(void) answeredCorrect;
--(void) answeredWrong;
--(void) saveGameData;
--(void) clearGameData;
+    - ( id )initWithPlayers: ( NSInteger )numberOfPlayers;
+    - ( id )initWithSavedData: ( NSDictionary* )gameStateData;
+    - ( BOOL )canPickCard: ( long )index;
+    - ( BOOL )isPairFound;
+    - ( BOOL )isGameOver;
+    - ( void )pickCard: ( long )index;
+    - ( void )answeredCorrect;
+    - ( void )answeredWrong;
+    - ( void )saveGameData;
+    - ( void )clearGameData;
 
 @end
